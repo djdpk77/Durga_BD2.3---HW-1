@@ -1,8 +1,10 @@
 const express = require('express');
 const { resolve } = require('path');
+let cors = require('cors');
 
 const app = express();
 const port = 3000;
+app.use(cors());
 
 let employees = [
   { name: 'Rahul Gupta', department: 'HR', salary: 50000 },
